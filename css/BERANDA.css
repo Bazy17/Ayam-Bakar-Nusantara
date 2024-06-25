@@ -425,7 +425,7 @@ footer .avatar-bottom p {
     height: 100vh;
   }
   header {
-    height: 5vh;
+    height: 6vh;
     justify-content: center;
   }
   header .avatar {
@@ -437,6 +437,7 @@ footer .avatar-bottom p {
   }
   nav {
     justify-content: space-between;
+    position: sticky;
   }
   nav .logo img {
     height: 50%;
@@ -499,9 +500,9 @@ footer .avatar-bottom p {
     font-size: 6px;
     border-radius: 6px;
   }
-  footer {
-    height: 30vh;
-  }
+  /* footer {
+    height: 40vh;
+  } */
   footer ul li a {
     font-size: 6px;
     font-weight: 500;
@@ -510,7 +511,7 @@ footer .avatar-bottom p {
     font-size: 6px;
   }
   footer .avatar-bottom img {
-    height: 10%;
-    width: 10%;
+    height: 15%;
+    width: 15%;
   }
 }
