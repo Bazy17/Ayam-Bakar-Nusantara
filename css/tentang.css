@@ -56,18 +56,25 @@ nav ul li a.active {
 .sejarah .container {
   background-color: var(--bg-pages);
   display: flex;
+  justify-content: center;
 }
 .sejarah .container .isi-sejarah {
-  padding: 50px 150px;
-  background-color: var(--bg-pages);
+  padding: 50px;
+  background-color: #fbdaa1;
+  width: 70%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transition: linear 0.3s;
+  border-radius: 20px;
+}
+.sejarah .container .isi-sejarah:hover {
+  transform: scale(1.05);
 }
 
 .sejarah .container .isi-sejarah p {
   font-size: 20px;
   font-weight: 500;
-  background-color: #fbdaa1;
-  padding: 30px;
-  height: 70vh;
 }
 h1 {
   font-size: 30px;
@@ -83,47 +90,29 @@ h1 {
 }
 .produksi .container {
   background-color: var(--bg-pages);
-  display: grid;
-  grid-template-columns: 4fr 1fr;
+  display: flex;
+  justify-content: center;
 }
-.produksi .container .isi-kiri {
-  background-color: var(--bg-pages);
+.produksi .container .isi {
+  padding: 50px;
+  background-color: #fbdaa1;
+  width: 70%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transition: linear 0.3s;
+  border-radius: 20px;
 }
-.produksi .container .isi-kiri {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 50px;
-  padding-right: 20px;
+.produksi .container .isi:hover {
+  transform: scale(1.05);
 }
 
-.produksi .container .isi-kiri p {
+.produksi .container .isi p {
   font-size: 20px;
   font-weight: 500;
-  background-color: #fbdaa1;
-  padding: 30px;
-  height: 80vh;
 }
-.produksi .container .isi-kanan {
-  padding-right: 50px;
-  padding-top: 50px;
-  display: grid;
-  gap: 20px;
-  height: 50vh;
-}
-.produksi .container .isi-kanan button {
-  font-size: 20px;
-  font-weight: 600;
-  background-color: #f8c871;
-  padding: 5px;
-  border: none;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.produksi .container .isi-kanan button:hover {
-  background-color: var(--primary);
-  color: var(--secondary);
-  transition: ease-in-out all 0.5s;
+.produksi .container .isi p span {
+  font-weight: 700;
 }
 .sertifikasi {
   grid-area: sertifikasi;
@@ -157,20 +146,25 @@ h1 {
 }
 .testimoni .container {
   background-color: var(--bg-pages);
-  padding: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .testimoni .container .box {
   display: flex;
   flex-direction: column;
-  padding: 1%;
+  padding: 2%;
   background-color: #fff;
   margin: 3%;
-  border-radius: 2px solid;
+  border-radius: 20px;
   box-sizing: border-box;
   width: auto;
   height: auto;
+  transition: linear 0.3s;
+}
+.testimoni .container .box:hover {
+  transform: scale(1.05);
 }
 .testimoni .container h2 {
   font-size: 20px;
@@ -205,66 +199,29 @@ h1 {
     font-size: 18px;
   }
   .sejarah .container .isi-sejarah {
-    padding: 10px 25px;
-    background-color: var(--bg-pages);
+    padding: 40px;
+    width: 80%;
   }
   .sejarah .container .isi-sejarah p {
-    font-size: 14px;
-    background-color: #fbdaa1;
-    padding: 10px;
+    font-size: 16px;
   }
-  .produksi .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-    grid-template-areas: "kiri" "kanan";
-    padding-top: 10px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+  .produksi .container .isi {
+    padding: 40px;
+    width: 80%;
   }
-  .produksi .container .isi-kiri {
-    grid-area: kanan;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .produksi .container .isi-kiri p {
-    font-weight: 500;
-    font-size: 14px;
-  }
-  .produksi .container .isi-kiri p span {
-    font-weight: 700;
-    font-size: 14px;
+  .produksi .container .isi p {
+    font-size: 16px;
   }
 
-  .produksi .container .isi-kanan {
-    grid-area: kiri;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    gap: 5px;
-    height: 50vh;
-  }
-  .produksi .container .isi-kanan button {
-    width: 70%;
-    height: 60%;
-    font-size: 14px;
-    margin: 20%;
-    padding: 5%;
-  }
   .sertifikasi .container h1 {
     font-size: 18px;
   }
   .sertifikasi .container .logo-sertifikasi img {
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
   }
   .testimoni .container {
-    padding: 70px;
+    padding: 40px;
   }
 }
 
@@ -273,107 +230,80 @@ h1 {
     display: none;
   }
   h1 {
-    font-size: 12px;
-    padding: 20px 0;
+    font-size: 10px;
+    padding: 10px 0;
   }
   .sejarah .container .isi-sejarah {
-    padding: 10px 25px;
-    background-color: var(--bg-pages);
+    padding: 20px;
+    width: 82%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .sejarah .container .isi-sejarah p {
     font-size: 8px;
-    background-color: #fbdaa1;
-    padding: 10px;
-    height: 50vh;
   }
-  .produksi .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-    grid-template-areas: "kiri" "kanan";
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+  .produksi .container .isi {
+    padding: 20px;
+    width: 82%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  .produksi .container .isi-kiri {
-    grid-area: kanan;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .produksi .container .isi-kiri p {
-    font-weight: 500;
-    font-size: 8px;
-  }
-  .produksi .container .isi-kiri p span {
-    font-weight: 700;
+  .produksi .container .isi p {
     font-size: 8px;
   }
 
-  .produksi .container .isi-kanan {
-    grid-area: kiri;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    gap: 5px;
-    height: 30vh;
-  }
-  .produksi .container .isi-kanan button {
-    width: 70%;
-    height: 60%;
-    font-size: 14px;
-    margin: 20%;
-    padding: 5%;
-  }
   .sertifikasi .container h1 {
-    font-size: 12px;
+    font-size: 10px;
   }
   .sertifikasi .container .logo-sertifikasi img {
-    width: 30%;
-    height: 50%;
+    width: 90%;
+    height: 90%;
   }
   .testimoni .container {
-    background-color: var(--bg-pages);
-    display: grid;
-    padding: 20%;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .testimoni .container .box {
-    padding: 1%;
-    margin: 5px;
-    border-radius: 2px solid;
+    margin: 2%;
+    padding: 5%;
+    width: 100%;
   }
-  .testimoni .container .tittle {
-    display: flex;
-    justify-content: space-between;
+  .testimoni .container .box .tittle {
+    align-items: center;
   }
+
   .testimoni .container h2 {
     font-size: 8px;
   }
 
   .testimoni .container .rating {
-    display: none;
+    display: flex;
     border: 1px solid;
-    border-radius: 30px;
-    padding: 8px;
+    border-radius: 16px;
+    padding: 4px;
     width: 15%;
-    height: 40%;
+    height: 20%;
     font-size: 13px;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimoni .container .rating p {
+    font-size: 12px;
+    align-items: center;
   }
 
   .testimoni .container .text .pesanan {
     display: flex;
   }
   .testimoni .container .text p {
-    font-size: 6px;
+    font-size: 8px;
     font-weight: 600;
   }
   .testimoni .container .text .pesanan p {
-    font-size: 5px;
+    font-size: 8px;
     font-weight: 500;
   }
   .testimoni .container .text a img {

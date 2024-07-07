@@ -57,7 +57,6 @@ nav ul li a.active2 {
   max-width: 300px;
   margin: 0 auto;
   margin-bottom: 40px;
-  /* background-color: #822418; */
 }
 .search-box input {
   position: absolute;
@@ -75,6 +74,8 @@ nav ul li a.active2 {
   color: var(--primary);
   text-align: center;
   justify-content: center;
+  font-size: 25px;
+  font-weight: 400;
 }
 .search-box i {
   position: absolute;
@@ -134,4 +135,46 @@ nav ul li a.active2 {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 100px 0px 100px 0;
+}
+
+@media (max-width: 768px) {
+  .search {
+    padding-top: 50px;
+  }
+  .search .search-box {
+    height: 40px;
+    max-width: 300px;
+  }
+  .search-box input::placeholder {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .search {
+    padding-top: 30px;
+  }
+  .search .search-box {
+    height: 35px;
+    max-width: 250px;
+  }
+  .search-box input {
+    font-size: 8px;
+  }
+  .search-box input::placeholder {
+    font-size: 8px;
+  }
+  .images .image-box img {
+    height: 70px;
+    width: 100px;
+  }
+  .image-box h6 {
+    font-size: 8px;
+  }
+  .search .terima-pesanan {
+    padding-top: 20px;
+    font-size: 10px;
+  }
+  .search .terima-pesanan .images {
+    padding: 20px 0px 20px 0;
+  }
 }

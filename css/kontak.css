@@ -52,8 +52,12 @@ nav ul li a.active3 {
   background-color: var(--bg-avatar);
   border: none;
   border-radius: 20px;
-  padding: 30px 30px 30px 30px;
+  padding: 50px 30px 50px 30px;
   width: 90%;
+  transition: linear 0.2s;
+}
+.kontak .container:hover {
+  transform: scale(1.05);
 }
 .kontak .container .isi-kontak {
   margin: auto 0;
@@ -86,10 +90,14 @@ nav ul li a.active3 {
   background-color: var(--bg-avatar);
   border: none;
   border-radius: 20px;
-  padding: 30px 30px 30px 30px;
+  padding: 50px 30px 50px 30px;
   width: 90%;
-  height: 30vh;
+  height: auto;
   align-content: center;
+  transition: linear 0.2s;
+}
+.lokasi .isi-lokasi:hover {
+  transform: scale(1.05);
 }
 
 .lokasi .isi-lokasi .alamat {
@@ -99,7 +107,7 @@ nav ul li a.active3 {
 }
 .lokasi .isi-lokasi .alamat p1 {
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
 }
 .lokasi .isi-lokasi .alamat span {
@@ -116,4 +124,65 @@ nav ul li a.active3 {
   width: 90vw;
   height: 70vh;
   margin-bottom: 100px;
+  transition: linear 0.2s;
+}
+.container .maps iframe:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .kontak {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .kontak .container {
+    padding: 30px 30px 30px 30px;
+    width: 90%;
+  }
+  .kontak .container .isi-kontak p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .lokasi {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .lokasi .isi-lokasi {
+    padding: 30px 30px 30px 30px;
+  }
+  .lokasi .isi-lokasi .alamat p1 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 500px) {
+  .kontak {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .kontak .container {
+    padding: 20px 10px 20px 10px;
+    width: 90%;
+  }
+  .kontak .container .isi-kontak p {
+    font-size: 8px;
+    font-weight: 400;
+  }
+  .kontak .container .isi-kontak a img {
+    width: 15%;
+    height: 10%;
+  }
+  .lokasi {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .lokasi .isi-lokasi {
+    padding: 20px 10px 20px 10px;
+  }
+  .lokasi .isi-lokasi .alamat p1 {
+    font-size: 8px;
+    font-weight: 600;
+  }
+  .container .maps iframe {
+    margin-bottom: 20px;
+  }
 }

@@ -11,11 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="css/beranda.css" />
+    <link rel="stylesheet" href="css/tentang.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/tim.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
-  <body class="scroll-down">
+  <body>
     <div class="container">
-      <header>
+      <header class="header">
         <div class="avatar">
           <img src="img/AVATAR_HERO/AVATAR AYAM.png" alt="Avatar" />
         </div>
@@ -25,12 +30,10 @@
           <img src="img/BERANDA/LOGO AYAM BAKAR NUSANTARA.png" alt="" />
         </div>
         <ul>
-          <li><a href="index.html" class="active">beranda</a></li>
-          <li><a href="tentang.html" class="active1">tentang</a></li>
-          <li><a href="menu.html" class="active2">menu</a></li>
-          <li>
-            <a href="kontak.html" class="active3">kontak & lokasi</a>
-          </li>
+          <li><a href="index.html" >beranda</a></li>
+          <li><a href="tentang.html" >tentang</a></li>
+          <li><a href="menu.html" >menu</a></li>
+          <li><a href="kontak.html" >kontak & lokasi</a></li>
           <li><a href="tim.html" class="active4">tim</a></li>
         </ul>
         <div class="menu-toggle">
@@ -40,32 +43,47 @@
           <span></span>
         </div>
       </nav>
-      <hero class="hero">
-        <div class="welcome">
-          <h2>SELAMAT DATANG DI<br /><br /></h2>
-          <h1>AYAM BAKAR MAMA ZAIN<br /><br /><br /></h1>
-          <p>HIDANGAN ISTIMEWA PENUH CITA RASA NUSANTARA<br /><br /><br /></p>
-          <a href="menu.html"><button class="menu">menu</button></a>
+      <section class="hero">
+        <div class="gambar">
+            <img src="img/AVATAR_HERO/HERO AYAM BAKAR.png" alt="" />
         </div>
-        <div class="logo">
-          <img src="img/BERANDA/LOGO AYAM BAKAR MAMA ZAIN.png" alt="Logo" />
+        <div class="menu">
+          <h1>tim</h1>
         </div>
-        <div class="slides">
-          <div class="slide">
-            <img src="img/BERANDA/PREVIEW AYAM BAKAR 1.png" alt="">
-          </div>
-          <div class="slide">
-            <img src="img/BERANDA/PREVIEW AYAM BAKAR 2.png" alt="">
-          </div>
-          <div class="slide">
-            <img src="img/BERANDA/PREVIEW AYAM BAKAR 3.png" alt="">
-          </div>
-          <div class="navigation">
-            <a class="prev" onclick = "plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick = "plusSlides(-1)">&#10095;</a>
+      </section>
+      <div class="tim">
+        <div class="tim-atas">
+          <div class="himma">
+            <img src="img/TEAM/Himma.png" alt="">
+            <p>Himmatul Aliyah Asikin</p>
+            <p>Project Manager</p>
           </div>
         </div>
-      </hero>
+        <div class="tim-tengah">
+          <div class="ratu">
+            <img src="img/TEAM/Ratu.png" alt="">
+            <p>Ratu Ayu Restu</p>
+            <p>Dokumenter</p>
+          </div>
+          <div class="aziz">
+            <img src="img/TEAM/Aziz.png" alt="">
+            <p>Muhamad Aziz</p>
+            <p>Programmer</p>
+          </div>
+        </div>
+        <div class="tim-bawah">
+          <div class="shiva">
+            <img src="img/TEAM/Shiva.png" alt="">
+            <p>Shiva Alkafia Putri</p>
+            <p>Designer</p>
+          </div>
+          <div class="ahnaf">
+            <img src="img/TEAM/Ahnaf.png" alt="">
+            <p>Ahnaf Dzakwan Aufa</p>
+            <p>Analis</p>
+          </div>
+        </div>
+      </div>
       <footer>
         <ul>
           <li>
@@ -81,5 +99,9 @@
       </footer>
     </div>
     <script src="javascript/script.js"></script>
+    <script src="javascript/menu.js"></script>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

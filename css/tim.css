@@ -1,0 +1,328 @@
+:root {
+  --primary: #822418;
+  --secondary: #f4a313;
+  --bg-avatar: #ffe495;
+  --bg-pages: #fff6c9;
+}
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins";
+}
+
+nav ul li a.active4 {
+  color: var(--secondary);
+  padding: 10px 20px;
+  box-shadow: 0px -3px 0px 1px var(--secondary) inset;
+  border-radius: 10px;
+  border: none;
+}
+.tim {
+  background-color: var(--bg-pages);
+  justify-content: center;
+  padding-top: 100px;
+  width: 100%;
+}
+.tim .tim-atas {
+  display: flex;
+  justify-content: center;
+}
+.tim .tim-atas .himma {
+  display: flex;
+  background-color: var(--secondary);
+  width: 40%;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  transition: 0.5s linear;
+  border: none;
+  border-radius: 20px;
+}
+.tim .tim-atas .himma:hover {
+  transform: scale(1.06);
+  background-color: var(--bg-avatar);
+}
+.tim .tim-atas .himma img {
+  width: auto;
+  height: auto;
+}
+.tim .tim-atas .himma p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.tim .tim-tengah {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+.tim .tim-tengah .ratu {
+  background-color: var(--secondary);
+}
+.tim .tim-tengah .ratu {
+  display: flex;
+  background-color: var(--secondary);
+  width: 40%;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  transition: 0.5s linear;
+  border: none;
+  border-radius: 20px;
+}
+.tim .tim-tengah .ratu:hover {
+  transform: scale(1.06);
+  background-color: var(--bg-avatar);
+}
+.tim .tim-tengah .ratu img {
+  width: auto;
+  height: auto;
+}
+.tim .tim-tengah .ratu p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.tim .tim-tengah .aziz {
+  background-color: var(--secondary);
+}
+.tim .tim-tengah .aziz {
+  display: flex;
+  background-color: var(--secondary);
+  width: 40%;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  transition: 0.5s linear;
+  border: none;
+  border-radius: 20px;
+}
+.tim .tim-tengah .aziz:hover {
+  transform: scale(1.06);
+  background-color: var(--bg-avatar);
+}
+.tim .tim-tengah .aziz img {
+  width: auto;
+  height: auto;
+}
+.tim .tim-tengah .aziz p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.tim .tim-bawah {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+}
+.tim .tim-bawah .shiva {
+  background-color: var(--secondary);
+}
+.tim .tim-bawah .shiva {
+  display: flex;
+  background-color: var(--secondary);
+  width: 40%;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  transition: 0.5s linear;
+  border: none;
+  border-radius: 20px;
+}
+.tim .tim-bawah .shiva:hover {
+  transform: scale(1.06);
+  background-color: var(--bg-avatar);
+}
+.tim .tim-bawah .shiva img {
+  width: auto;
+  height: auto;
+}
+.tim .tim-bawah .shiva p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.tim .tim-bawah .ahnaf {
+  background-color: var(--secondary);
+}
+.tim .tim-bawah .ahnaf {
+  display: flex;
+  background-color: var(--secondary);
+  width: 40%;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  transition: 0.5s linear;
+  border: none;
+  border-radius: 20px;
+}
+.tim .tim-bawah .ahnaf:hover {
+  transform: scale(1.06);
+  background-color: var(--bg-avatar);
+}
+.tim .tim-bawah .ahnaf img {
+  width: auto;
+  height: auto;
+}
+.tim .tim-bawah .ahnaf p {
+  font-size: 20px;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .tim {
+    padding-top: 50px;
+  }
+  .tim .tim-atas .himma {
+    width: 40%;
+    height: 250px;
+    gap: 6%;
+  }
+  .tim .tim-atas .himma img {
+    width: auto;
+    height: 50%;
+  }
+  .tim .tim-atas .himma p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .tim .tim-tengah .ratu {
+    width: 40%;
+    height: 250px;
+    gap: 6%;
+  }
+  .tim .tim-tengah .ratu img {
+    width: auto;
+    height: 50%;
+  }
+  .tim .tim-tengah .ratu p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .tim .tim-tengah .aziz {
+    width: 40%;
+    height: 250px;
+    gap: 6%;
+  }
+  .tim .tim-tengah .aziz img {
+    width: auto;
+    height: 50%;
+  }
+  .tim .tim-tengah .aziz p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .tim .tim-bawah .shiva {
+    width: 40%;
+    height: 250px;
+    gap: 6%;
+  }
+  .tim .tim-bawah .shiva img {
+    width: auto;
+    height: 50%;
+  }
+  .tim .tim-bawah .shiva p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .tim .tim-bawah .ahnaf {
+    width: 40%;
+    height: 250px;
+    gap: 6%;
+  }
+  .tim .tim-bawah .ahnaf img {
+    width: auto;
+    height: 50%;
+  }
+  .tim .tim-bawah .ahnaf p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 500px) {
+  .tim {
+    padding-top: 20px;
+  }
+  .tim .tim-atas .himma {
+    width: 40%;
+    height: 150px;
+    gap: 6%;
+  }
+  .tim .tim-atas .himma img {
+    width: auto;
+    height: 40%;
+  }
+  .tim .tim-atas .himma p {
+    font-size: 8px;
+    font-weight: 600;
+  }
+  .tim .tim-tengah .ratu {
+    width: 40%;
+    height: 150px;
+    gap: 6%;
+  }
+  .tim .tim-tengah .ratu img {
+    width: auto;
+    height: 40%;
+  }
+  .tim .tim-tengah .ratu p {
+    font-size: 8px;
+    font-weight: 600;
+  }
+  .tim .tim-tengah .aziz {
+    width: 40%;
+    height: 150px;
+    gap: 6%;
+  }
+  .tim .tim-tengah .aziz img {
+    width: auto;
+    height: 40%;
+  }
+  .tim .tim-tengah .aziz p {
+    font-size: 8px;
+    font-weight: 600;
+  }
+  .tim .tim-bawah .shiva {
+    width: 40%;
+    height: 150px;
+    gap: 6%;
+  }
+  .tim .tim-bawah .shiva img {
+    width: auto;
+    height: 40%;
+  }
+  .tim .tim-bawah .shiva p {
+    font-size: 8px;
+    font-weight: 600;
+  }
+  .tim .tim-bawah .ahnaf {
+    width: 40%;
+    height: 150px;
+    gap: 6%;
+  }
+  .tim .tim-bawah .ahnaf img {
+    width: auto;
+    height: 40%;
+  }
+  .tim .tim-bawah .ahnaf p {
+    font-size: 8px;
+    font-weight: 600;
+  }
+  .tim .tim-tengah {
+    margin-top: 20px;
+  }
+  .tim .tim-bawah {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+}
